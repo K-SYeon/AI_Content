@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Document</title>
+    <title>초등 6학년 AI 학습 콘텐츠 제작기</title>
+    <link rel="stylesheet" href="../../common/css/main.css">
 </head>
 <body>
     <div id="container"></div>
     <div id="wrap">
-        <h1>초등 6학년 콘텐츠</h1>
+        <div class="header">
+            <div class="grade-badge">
+                Grade 06
+            </div>
+            <h1>
+                AI 학습 콘텐츠 제작기
+            </h1>
+            <p>
+                초등 6학년 학습 콘텐츠 생성
+            </p>
+        </div>
+
+        <div class="generator-box">
+            <div class="row">
+                <label>과목</label>
+
+                <select>
+                    <option>수학</option>
+                    <option>국어</option>
+                    <option>사회</option>
+                    <option>과학</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>주제</label>
+
+                <input type="text" placeholder="예) 분수의 덧셈">
+            </div>
+
+            <div class="row">
+                <label>문제 수</label>
+
+                <input type="number" value="5">
+            </div>
+
+            <button>
+                콘텐츠 생성하기
+            </button>
+        </div>
     </div>
-    <script src="../../common/js/popscale.js"></script>
     <script src="../../common/js/jquery-3.6.0.min.js"></script>
     <script src="../../common/js/jquery.cookie.js"></script>
+    <script src="../../common/js/popscale.js"></script>
 </body>
 </html>
