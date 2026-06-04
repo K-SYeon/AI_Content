@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:'Malgun Gothic', sans-serif;
+    background:
+    linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #eef6ff 100%
+    );
+}
+
+/* ------------------
+   1920 x 1080 기준
+------------------ */
+
+#wrap{
+    position:relative;
+    width:1920px;
+    height:1080px;
+}
+
+/* ------------------
+   배경 장식
+------------------ */
+
+#wrap::before{
+    content:"";
+    position:absolute;
+    left:-200px;
+    top:-200px;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    background:rgba(74,144,226,.08);
+}
+
+#wrap::after{
+    content:"";
+    position:absolute;
+    right:-150px;
+    bottom:-150px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:
+    rgba(139,92,246,.08);
+}
+
+/* ------------------
+   타이틀
+------------------ */
+
+.title-box{
+    position:absolute;
+    left:0;
+    top:140px;
+    width:1920px;
+    text-align:center;
+}
+
+.title-box h1{
+    font-size:72px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.title-box p{
+    font-size:28px;
+    color:#666;
+}
+
+/* ------------------
+   카드 영역
+------------------ */
+
+.grade-list{
+    position:absolute;
+    left:460px;
+    top:420px;
+    display:flex;
+    gap:80px;
+}
+
+.grade-card{
+    width:460px;
+    height:320px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    background:#fff;
+    border-radius:30px;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+    transition:transform .3s, box-shadow .3s;
+}
+
+.grade-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.grade-icon{
+    font-size:84px;
+    margin-bottom:20px;
+}
+
+.grade-title{
+    font-size:42px;
+    font-weight:700;
+    color:#222;
+}
+
+.grade-sub{
+    margin-top:12px;
+    font-size:24px;
+    color:#888;
+}
+
+/* ------------------
+   학년별 색상
+------------------ */
+
+.grade05{
+    border-top:
+    10px solid #4a90e2;
+}
+
+.grade06{
+    border-top:
+    10px solid #8b5cf6;
+}
