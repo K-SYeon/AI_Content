@@ -2,7 +2,13 @@ const TTS = {
 
     speak(text) {
 
-        console.log(text);
+        const utterance = new SpeechSynthesisUtterance(text);
+
+        utterance.lang = 'ko-KR';
+
+        speechSynthesis.cancel();
+
+        speechSynthesis.speak(utterance);
 
     }
 

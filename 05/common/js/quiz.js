@@ -40,11 +40,15 @@ const Quiz = {
                     ${question.question}
                 </div>
 
+                <button class="btn-tts" data-tts="${question.tts}">
+                    🔊 듣기
+                </button>
+
                 <ul class="choice-list">
                     ${choicesHtml}
                 </ul>
 
-                <div>
+                <div class="tts-preview">
                     TTS : ${question.tts}
                 </div>
 
@@ -73,6 +77,10 @@ const Quiz = {
                 <div class="question-title">
                     ${question.question}
                 </div>
+
+                <button class="btn-tts" data-tts="${question.tts}">
+                    🔊 듣기
+                </button>
 
                 <div>
                     정답 : ${question.answer}

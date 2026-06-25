@@ -14,6 +14,14 @@ const UI = {
 
         });
 
+        $(document).on('click', '.btn-tts', function() {
+
+            const text = $(this).data('tts');
+
+            TTS.speak(text);
+
+        });
+
     },
 
     async generateContent() {
