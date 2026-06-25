@@ -42,33 +42,9 @@ const UI = {
 
         let html = '';
 
-        data.questions.forEach((item, index) => {
+        data.questions.forEach((item) => {
 
-            html += `
-                <div class="question-item">
-
-                    <div>
-                        <strong>문제 ${index + 1}</strong>
-                    </div>
-
-                    <div>
-                        문제 : ${item.question}
-                    </div>
-
-                    <div>
-                        TTS : ${item.tts}
-                    </div>
-
-                    <div>
-                        정답 : ${item.answer}
-                    </div>
-
-                    <div>
-                        해설 : ${item.explanation}
-                    </div>
-
-                </div>
-            `;
+            html += Quiz.renderQuestion(item);
 
         });
 
