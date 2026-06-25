@@ -44,7 +44,17 @@ const UI = {
 
             html += `
                 <div class="question-item">
-                    문제 ${index + 1}. ${item.question}
+                    <div>
+                        문제 ${index + 1}
+                    </div>
+
+                    <div>
+                        [${item.type}]
+                    </div>
+
+                    <div>
+                        ${item.question}
+                    </div>
                 </div>
             `;
 
