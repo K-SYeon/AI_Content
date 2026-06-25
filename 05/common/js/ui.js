@@ -10,29 +10,37 @@ const UI = {
 
         $('.btn-generate').on('click', () => {
 
-            this.showSampleResult();
+            this.generateContent();
 
         });
 
     },
 
-    showSampleResult() {
+    async generateContent() {
 
-        const sampleData = [
-            {
-                question: '0.3 + 0.5 = ?'
-            },
-            {
-                question: '0.7 + 0.2 = ?'
-            },
-            {
-                question: '0.8 + 0.4 = ?'
-            }
-        ];
+        const params = {
+
+            subject: $('select').val(),
+
+            topic: $('input[type="text"]').val(),
+
+            count: Number(
+                $('input[type="number"]').val()
+            )
+
+        };
+
+        const result = await AI.generate(params);
+
+        this.renderResult(result);
+
+    },
+
+    renderResult(data) {
 
         let html = '';
 
-        sampleData.forEach((item, index) => {
+        data.questions.forEach((item, index) => {
 
             html += `
                 <div class="question-item">
