@@ -41,12 +41,15 @@ body{
 }
 
 .generator-box{
-    width:900px;
+    width:850px;
     margin:60px auto 0;
     background:#fff;
     padding:50px;
     border-radius:30px;
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    position:absolute;
+    left:150px;
+    top:300px;
 }
 
 .row{
@@ -78,4 +81,35 @@ button{
     font-size:28px;
     font-weight:700;
     cursor:pointer;
+}
+
+.result-box{
+    position:absolute;
+    right:150px;
+    top:300px;
+    width:620px;
+    height:600px;
+    background:#fff;
+    padding:50px;
+    border-radius:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.result-title{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.result-list{
+    height:440px;
+    overflow-y:auto;
+    font-size:22px;
+    line-height:1.8;
+    color:#444;
+}
+
+.question-item{
+    padding:15px 0;
+    border-bottom:1px solid #ddd;
 }
