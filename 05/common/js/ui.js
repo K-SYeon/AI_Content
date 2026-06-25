@@ -44,17 +44,27 @@ const UI = {
 
             html += `
                 <div class="question-item">
+
                     <div>
-                        문제 ${index + 1}
+                        <strong>문제 ${index + 1}</strong>
                     </div>
 
                     <div>
-                        [${item.type}]
+                        문제 : ${item.question}
                     </div>
 
                     <div>
-                        ${item.question}
+                        TTS : ${item.tts}
                     </div>
+
+                    <div>
+                        정답 : ${item.answer}
+                    </div>
+
+                    <div>
+                        해설 : ${item.explanation}
+                    </div>
+
                 </div>
             `;
 
