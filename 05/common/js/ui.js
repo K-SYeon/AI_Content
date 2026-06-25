@@ -20,6 +20,8 @@ const UI = {
 
         const params = {
 
+            grade: '05',
+
             subject: $('select').val(),
 
             topic: $('input[type="text"]').val(),
